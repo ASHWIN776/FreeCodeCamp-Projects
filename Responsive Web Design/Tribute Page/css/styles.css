@@ -1,9 +1,94 @@
 html, body{
-    margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
 }
 
 *, *::after, *::before{
     box-sizing: inherit;
+}
+
+#main{
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+#title{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#title h1{
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+
+#img-div{
+    background-color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+figure{
+    margin: 0.5rem 0rem;
+}
+
+
+/* responsive */
+#image{
+    max-width: 100%;
+}
+
+#img-caption{
+    margin: 0.7rem 0;
+}
+
+
+#tribute-info h3, #tribute-info p{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+#tribute-info p{
+    padding-bottom: 1rem;
+}
+
+#timeline{
+    padding: 1.5rem 1.4rem;
+    line-height: 1.5rem;
+}
+
+#timeline li{
+    margin: 1rem 0;
+}
+
+blockquote{
+    font-size: 1.3rem;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body{
+        padding: 1rem 0.5rem;
+    }
+
+    #timeline, blockquote{
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    #title h1{
+        font-size: 1.4rem;
+    }
+
+    #tribute-info h3{
+        font-size: 1rem;
+        margin-top: 1.2rem;
+    }
+
+    #timeline{
+        padding: 0 0 0 1.3rem;
+    }
 }
