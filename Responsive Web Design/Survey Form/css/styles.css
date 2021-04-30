@@ -1,4 +1,4 @@
-body, html{
+body{
     padding: 0;
     box-sizing: border-box;
 }
@@ -6,5 +6,6 @@ body, html{
 *, *::after, *::before{
     box-sizing: inherit;
 }
+
 
 
