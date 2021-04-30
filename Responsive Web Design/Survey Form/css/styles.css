@@ -1,6 +1,15 @@
 body{
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url("../img/survey-form-bg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
 }
 
 *, *::after, *::before{
@@ -19,18 +28,30 @@ body{
 }
 
 header{
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 #survey-form{
-    border: 2px solid;
     border-radius: 5px;
     width: 85%;
     margin: 0 auto;
     padding: 2.5rem 2rem;
     font-size: 1.2rem;
-    color: white;
+    /* opacity: 0.9; */
+    position: relative;
+}
+
+/* Applying opacity without dimming the text in the form */
+#survey-form::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     background-color: #272845;
+    z-index: -1;
+    opacity: 0.9;
 }
 
 #survey-form div{
