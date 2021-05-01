@@ -2,8 +2,41 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #EEEEEE;
 }
 
 *, *::after, *::before{
     box-sizing: inherit;
 }
+
+#header{
+    padding-top: 1rem;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar ul{
+    margin: 0.4rem 0;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+#nav-bar li{
+    padding: 0.2rem 0;
+}
+
+
+#get-started{
+    margin-top: 11rem;
+}
+
