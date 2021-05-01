@@ -127,3 +127,26 @@ html, body{
     text-transform: uppercase;
     border: none;
 }
+
+footer{
+    background-color: #DDDDDD;
+    text-align: right;
+    padding: 1.5rem;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0.4rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li{
+    margin: 0 1rem;
+}
+
+footer p{
+    margin: 0;
+}
