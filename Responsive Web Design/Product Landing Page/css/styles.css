@@ -9,6 +9,17 @@ html, body{
     box-sizing: inherit;
 }
 
+/* Common */
+.links{
+    text-decoration: none;
+    color: black;
+}
+
+.yellow{
+    background-color: #F1C40F;
+}
+
+
 #header{
     padding-top: 1rem;
     position: fixed;
@@ -16,13 +27,11 @@ html, body{
     width: 100%;
     text-align: center;
     background-color: #EEEEEE;
+    /* Remove this
+    display: none; */
 }
 
 
-.links{
-    text-decoration: none;
-    color: black;
-}
 
 #nav-bar ul{
     margin: 0.4rem 0;
@@ -38,5 +47,25 @@ html, body{
 
 #get-started{
     margin-top: 11rem;
+    /* border: 2px solid; */
+    text-align: center;
 }
 
+#email{
+    width: 50%;
+    padding: 0.3rem 0.3rem;
+    margin-bottom: 1rem;
+}
+
+#submit{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
