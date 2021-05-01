@@ -20,6 +20,7 @@ html, body{
 }
 
 
+/* Specific */
 #header{
     padding-top: 1rem;
     position: fixed;
@@ -27,8 +28,6 @@ html, body{
     width: 100%;
     text-align: center;
     background-color: #EEEEEE;
-    /* Remove this */
-    display: none;
 }
 
 
@@ -47,12 +46,11 @@ html, body{
 
 #get-started{
     margin-top: 11rem;
-    border: 2px solid;
     text-align: center;
 }
 
 #email{
-    width: 50%;
+    width: 276px;
     padding: 0.3rem 0.3rem;
     margin-bottom: 1rem;
 }
@@ -72,13 +70,17 @@ html, body{
 
 
 #features{
-    margin: 2rem 0;
-    border: 2px solid red;
+    margin: 1rem 0;
     text-align: center;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
 }
 
-#features img{
+.f-item{
+    margin: 3rem 0;
+}
+
+
+.f-item img{
     display: none;
 }
 
@@ -86,13 +88,12 @@ html, body{
     margin: 0;
 }
 
-.f-item{
-    margin: 3rem 0;
-}
+
 
 #video-section{
-    border: 2px solid blue;
+    text-align: center;
 }
+
 
 #video{
     max-width: 100%;
@@ -100,12 +101,11 @@ html, body{
 
 #pricing{
     margin: 3rem 0;
-    border: 2px solid;
     text-align: center;
 }
 
 .pricing-item{
-    width: 60%;
+    width: 19rem;
     margin: 2rem auto;
     padding: 1rem;
     border: 2px solid black;
@@ -114,6 +114,7 @@ html, body{
 .pricing-item h4{
     background-color: #DDDDDD;
     margin: -1rem;
+    margin-bottom: 0;
     padding: 1rem 0;
 }
 
@@ -149,4 +150,60 @@ footer li{
 
 footer p{
     margin: 0;
+}
+
+@media only screen and (min-width: 655px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav-bar ul{
+        display: flex;
+    }
+
+    #nav-bar li{
+        margin: 0 1rem;
+    }
+
+    #get-started{
+        margin-top: 5rem;
+    }
+
+    #features{
+        padding: 0 2rem;
+    }
+
+    .f-item{
+        display: flex;
+        justify-content: center;
+    }
+
+    .f-item img{
+        display: block;
+    }
+
+    .f-item > div:last-child{
+        margin-left: 2rem;
+        flex-basis: 70%;
+    }
+
+    .f-item h2, .f-item p{
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 805px){
+    main{
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    #pricing{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 }
