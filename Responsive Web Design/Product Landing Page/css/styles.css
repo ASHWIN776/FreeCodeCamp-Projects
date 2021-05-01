@@ -47,7 +47,7 @@ html, body{
 
 #get-started{
     margin-top: 11rem;
-    /* border: 2px solid; */
+    border: 2px solid;
     text-align: center;
 }
 
@@ -73,7 +73,7 @@ html, body{
 
 #features{
     margin: 2rem 0;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     text-align: center;
     padding: 1rem 0.5rem;
 }
@@ -88,4 +88,42 @@ html, body{
 
 .f-item{
     margin: 3rem 0;
+}
+
+#video-section{
+    border: 2px solid blue;
+}
+
+#video{
+    max-width: 100%;
+}
+
+#pricing{
+    margin: 3rem 0;
+    border: 2px solid;
+    text-align: center;
+}
+
+.pricing-item{
+    width: 60%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.pricing-item h4{
+    background-color: #DDDDDD;
+    margin: -1rem;
+    padding: 1rem 0;
+}
+
+.pricing-item p{
+    line-height: 1.5rem;
+}
+
+.pricing-item button{
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    border: none;
 }
