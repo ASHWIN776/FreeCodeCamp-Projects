@@ -27,8 +27,8 @@ html, body{
     width: 100%;
     text-align: center;
     background-color: #EEEEEE;
-    /* Remove this
-    display: none; */
+    /* Remove this */
+    display: none;
 }
 
 
@@ -68,4 +68,24 @@ html, body{
 
 #submit:hover{
     cursor: pointer;
+}
+
+
+#features{
+    margin: 2rem 0;
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+#features img{
+    display: none;
+}
+
+#features h2, #features p{
+    margin: 0;
+}
+
+.f-item{
+    margin: 3rem 0;
 }
