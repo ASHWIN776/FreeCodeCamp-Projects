@@ -51,11 +51,7 @@ code{
 }
 
 @media only screen and (min-width: 802px)
-{
-    body{
-        display: flex;
-    }
-    
+{   
     #navbar{
         position: fixed;
         border-right: 3.5px solid #99A2A2;
