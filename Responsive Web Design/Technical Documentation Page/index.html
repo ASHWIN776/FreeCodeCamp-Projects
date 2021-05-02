@@ -111,12 +111,12 @@
             <h2>Hello world</h2>
             <p>
                 To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
-            </p>
+
             <code>
-                function greetMe(yourName) { alert("Hello " + yourName); }
+                function greetMe(yourName) { alert("Hello " + yourName); }<br>
                 greetMe("World");
             </code>
-            <p>
+
                 Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
             </p>
         </section>
@@ -166,16 +166,17 @@
             </p>
             <p>
                 JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+
+                <code>
+                    if (true) { var x = 5; } console.log(x); // 5
+                </code>
+
+                    This behavior changes, when using the let declaration introduced in ECMAScript 2015.
+
+                <code>
+                    if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
+                </code>
             </p>
-            <code>
-                if (true) { var x = 5; } console.log(x); // 5
-            </code>
-            <p>
-                This behavior changes, when using the let declaration introduced in ECMAScript 2015.
-            </p>
-            <code>
-                if (true) { let y = 5; } console.log(y); // ReferenceError: y is not defined
-            </code>
         </section>
         <section id="Global_varibles" class="main-section">
             <h2>Global varibles</h2>
