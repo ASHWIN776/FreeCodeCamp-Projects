@@ -27,3 +27,23 @@ html, body{
     padding: 0.7rem 1.5rem;
     border-bottom: 1px solid;
 }
+
+#main-doc{
+    padding-left: 2rem;
+}
+
+#main-doc p{
+    padding-left: 0.8rem;
+}
+
+#main-doc p, #main-doc li{
+    line-height: 23px;
+}
+
+code{
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
