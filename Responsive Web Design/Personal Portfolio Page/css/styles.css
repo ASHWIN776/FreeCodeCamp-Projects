@@ -23,7 +23,9 @@ body, html{
     justify-content: flex-end;
 }
 
-.nav-link, figure a{
+.nav-link,
+figure a,
+#projects > a{
     color: black;
     text-decoration: none;
 }
@@ -59,4 +61,73 @@ body, html{
     text-align: center;
     font-size: 1.5rem;
     color: #BE3144;
+}
+
+/* Styling Projects section */
+#projects{
+    background-color: #45567D;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#projects h1{
+    font-size: 2.3rem;
+    border-bottom: 2px solid;
+}
+
+#projects-grid{
+    display: grid;
+}
+
+#projects figure{
+    /* border: 2px solid; */
+    margin: 2rem 0;
+}
+
+#projects img{
+    max-width: 100%;
+    display: block;
+}
+
+#projects figcaption{
+    margin: 0;
+    font-size: 1.3rem;
+    background-color: #303841;
+    color: white;
+    padding: 1rem;
+}
+
+#projects figure span{
+    color: transparent;
+    transition: color 800ms;
+    font-weight: bolder;
+}
+
+#projects figcaption:hover span{
+    color: #f19994;
+}
+
+#projects > a{
+    color: white;
+    font-size: 1.3rem;
+    background-color: #303841;
+    padding: 0.6rem 1rem;
+    border-radius: 3px;
+    width: 144px;
+    transition: background-color 500ms;
+}
+
+#projects > a i{
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+    transition: padding-left 500ms;
+}
+
+#projects > a:hover{
+    background-color: #BE3144;
+}
+
+#projects > a:hover i{
+    padding-left: 0.7rem;
 }
