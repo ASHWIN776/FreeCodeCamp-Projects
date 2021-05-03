@@ -172,3 +172,17 @@ figure a,
 #contact .profile-links:hover{
     color: #BE3144;
 }
+
+footer{
+    height: 30vh;
+    background-color: #303841;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+footer p{
+    font-size: 1.2rem;
+    padding: 0 3rem;
+}
