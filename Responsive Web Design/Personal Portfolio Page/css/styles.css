@@ -25,7 +25,9 @@ body, html{
 
 .nav-link,
 figure a,
-#projects > a{
+#projects > a,
+#contact .profile-links
+{
     color: black;
     text-decoration: none;
 }
@@ -130,4 +132,43 @@ figure a,
 
 #projects > a:hover i{
     padding-left: 0.7rem;
+}
+
+
+/* Styling Contact section */
+
+#contact{
+    background-color: #303841;
+    color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #BE3144;
+}
+
+#contact h1{
+    margin: 0;
+    font-size: 3rem;
+}
+
+#contact ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact .profile-links{
+    display: block;
+    color: white;
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+#contact .profile-links:hover{
+    color: #BE3144;
 }
