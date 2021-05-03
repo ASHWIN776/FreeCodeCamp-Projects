@@ -11,6 +11,8 @@ body, html{
 /* Styling navbar */
 #navbar{
     background-color: #BE3144;
+    position: fixed;
+    width: 100%;
 }
 
 #navbar ul{
@@ -35,4 +37,26 @@ body, html{
 
 .nav-link:hover{
     background-color: #45567d;
+}
+
+/* Styling welcome-section */
+#welcome-section{
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(to right, #383b3e, #303235, #29292c, #212123, #1a191b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1{
+    margin-bottom: 0;
+    font-size: 3.5rem;
+}
+
+#welcome-section p{
+    margin-top: 0.7rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #BE3144;
 }
