@@ -7,3 +7,32 @@ body, html{
 *, *::after, *::before{
     box-sizing: inherit;
 }
+
+/* Styling navbar */
+#navbar{
+    background-color: #BE3144;
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link, figure a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link{
+    display: inline-block;
+    padding: 1rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover{
+    background-color: #45567d;
+}
