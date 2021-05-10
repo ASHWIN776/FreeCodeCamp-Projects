@@ -80,27 +80,36 @@ figure a,
 
 #projects-grid{
     display: grid;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 #projects figure{
-    /* border: 2px solid; */
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
+
 #projects img{
+    margin: 0 auto;
     max-width: 100%;
     display: block;
 }
 
 #projects figcaption{
-    margin: 0;
+    width: 500px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.3rem;
     background-color: #303841;
     color: white;
-    padding: 1rem;
 }
 
 #projects figure span{
+    margin: 0 0.3rem;
     color: transparent;
     transition: color 800ms;
     font-weight: bolder;
@@ -185,4 +194,12 @@ footer{
 footer p{
     font-size: 1.2rem;
     padding: 0 3rem;
+}
+
+@media only screen and (min-width: 1090px)
+{
+    #projects-grid{
+    
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
